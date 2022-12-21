@@ -1,5 +1,5 @@
 // imports
-import React from 'react';
+//import React, { useState } from 'react';
 import './index.css';
 import Card from './Card.js';
 import './App.css';
@@ -17,10 +17,12 @@ import img5 from './pics/cremini-mushrooms.jpg';
 
 function Choice(props) {
  
-
+ 
   return (
   <>
-    <div className=" p-20 w-full font-semibold text-3xl " >Choice mushrooms are the delacacies of the mushroom world mostly known for the meatyness vegans love for substitute meat dishes.</div>
+    
+    <div className=" p-6 w-1/2 font-semibold text-3xl border-t-2 border-solid border-black" >Choice Mushrooms <button onClick='' className='w-auto  h-auto rounded border-2 shadow-lg  p-5 m-5 text-center '>Expand</button></div>
+    
     <Card img={img1} name='Portobello' caption='Portabella mushrooms contain non-nutritive compounds like polysaccharides, polyphenols, and carotenoids, which may have anti-inflammatory, antioxidant, and anticancer properties. In animal studies, mushrooms have been shown to stimulate immune cells and stop the growth and spread of cancer cells.'/>
     <Card img={img2} name='Reishi' caption='Lingzhi, Ganoderma lingzhi, also known as reishi, is a polypore fungus native to East Asia belonging to the genus Ganoderma. Its reddish brown varnished kidney-shaped cap with bands and peripherally inserted stem gives it a distinct fan-like appearance. When fresh, the lingzhi is soft, cork-like, and flat.'/>
     <Card img={img3} name='Shiitake' caption='The shiitake is an edible mushroom native to East Asia, which is now cultivated and consumed around the globe. It is considered a medicinal mushroom in some forms of traditional medicine.'/>
